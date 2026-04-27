@@ -1,0 +1,17 @@
+[build]
+  publish = "."
+    command = "echo done"
+
+    [build.environment]
+      SECRETS_SCAN_SMART_DETECTION_ENABLED = "false"
+
+      [[redirects]]
+        from = "/"
+          to = "/app.html"
+            status = 200
+
+            [[redirects]]
+              from = "/*"
+                to = "/app.html"  
+                  status = 200
+                  
