@@ -95,7 +95,7 @@ h1,h2,h3,h4{line-height:1.2}
 /* ============ BUTTONS ============ */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 20px;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;border:none;transition:var(--tr);text-decoration:none;white-space:nowrap;font-family:var(--font)}
 .btn-p{background:linear-gradient(135deg,var(--green),var(--green-dark));color:#fff;box-shadow:0 4px 15px var(--green-glow)}
-.btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(90,184,0,.4);color:#fff}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0, 84, 166,.4);color:#fff}
 .btn-s{background:rgba(255,255,255,.06);color:var(--text);border:1px solid var(--border-soft)}
 .btn-s:hover{background:rgba(255,255,255,.1);transform:translateY(-2px);color:var(--text)}
 .btn-o{background:transparent;color:var(--green);border:1.5px solid var(--green)}
@@ -109,7 +109,7 @@ h1,h2,h3,h4{line-height:1.2}
 
 /* ============ CARDS ============ */
 .card{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);padding:24px;box-shadow:0 4px 24px rgba(0,0,0,.4);transition:var(--tr)}
-.card-h:hover{border-color:var(--border);box-shadow:0 0 40px rgba(90,184,0,.15);transform:translateY(-3px)}
+.card-h:hover{border-color:var(--border);box-shadow:0 0 40px rgba(0, 84, 166,.15);transform:translateY(-3px)}
 .card-sm{padding:16px}
 
 /* ============ FORMS ============ */
@@ -117,7 +117,7 @@ h1,h2,h3,h4{line-height:1.2}
 .label{font-size:12px;font-weight:700;color:var(--text-2);text-transform:uppercase;letter-spacing:.5px}
 .req{color:#ef4444;margin-left:3px}
 .inp,.sel,.ta{background:rgba(255,255,255,.04);border:1.5px solid var(--border-soft);border-radius:10px;padding:12px 16px;color:var(--text);font-family:var(--font);font-size:15px;transition:var(--tr);width:100%;outline:none}
-.inp:focus,.sel:focus,.ta:focus{border-color:var(--green);background:rgba(90,184,0,.05);box-shadow:0 0 0 3px rgba(90,184,0,.1)}
+.inp:focus,.sel:focus,.ta:focus{border-color:var(--green);background:rgba(0, 84, 166,.05);box-shadow:0 0 0 3px rgba(0, 84, 166,.1)}
 .inp::placeholder,.ta::placeholder{color:var(--text-3)}
 .sel{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-repeat:no-repeat;background-position:right 12px center;background-size:20px;padding-right:40px}
 .sel option{background:var(--bg-card2);color:var(--text)}
@@ -127,7 +127,7 @@ h1,h2,h3,h4{line-height:1.2}
 
 /* ============ BADGES ============ */
 .badge{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:700}
-.b-active{background:rgba(90,184,0,.15);color:var(--green-light);border:1px solid rgba(90,184,0,.3)}
+.b-active{background:rgba(0, 84, 166,.15);color:var(--green-light);border:1px solid rgba(0, 84, 166,.3)}
 .b-expired{background:rgba(239,68,68,.15);color:#fca5a5;border:1px solid rgba(239,68,68,.3)}
 .b-repair{background:rgba(251,191,36,.15);color:#fbbf24;border:1px solid rgba(251,191,36,.3)}
 .b-pending{background:rgba(107,114,128,.12);color:var(--text-2);border:1px solid rgba(107,114,128,.3)}
@@ -139,15 +139,15 @@ h1,h2,h3,h4{line-height:1.2}
 .step-item.done:not(:last-child)::after{background:var(--green)}
 .step-circle{width:32px;height:32px;border-radius:50%;background:var(--bg-card2);border:2px solid var(--border-soft);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--text-3);position:relative;z-index:1;transition:var(--tr)}
 .step-item.done .step-circle{background:var(--green);border-color:var(--green);color:#fff;box-shadow:0 0 12px var(--green-glow)}
-.step-item.active .step-circle{border-color:var(--green);color:var(--green);box-shadow:0 0 0 4px rgba(90,184,0,.1)}
+.step-item.active .step-circle{border-color:var(--green);color:var(--green);box-shadow:0 0 0 4px rgba(0, 84, 166,.1)}
 .step-label{font-size:11px;color:var(--text-3);margin-top:6px;text-align:center;font-weight:600}
 .step-item.active .step-label{color:var(--text)}
 .step-item.done .step-label{color:var(--green)}
 
 /* ============ HERO ============ */
 .hero{position:relative;overflow:hidden;padding:90px 0 70px;text-align:center}
-.hero-glow{position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:800px;height:600px;background:radial-gradient(ellipse,rgba(90,184,0,.09) 0%,transparent 70%);pointer-events:none}
-.hero-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(90,184,0,.12);color:var(--green);border:1px solid rgba(90,184,0,.3);padding:5px 14px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:.5px;margin-bottom:20px}
+.hero-glow{position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:800px;height:600px;background:radial-gradient(ellipse,rgba(0, 84, 166,.09) 0%,transparent 70%);pointer-events:none}
+.hero-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(0, 84, 166,.12);color:var(--green);border:1px solid rgba(0, 84, 166,.3);padding:5px 14px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:.5px;margin-bottom:20px}
 .hero-title{font-size:clamp(28px,5vw,52px);font-weight:900;color:#fff;margin-bottom:16px;line-height:1.1}
 .highlight{background:linear-gradient(135deg,var(--green),var(--green-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-sub{font-size:17px;color:var(--text-2);max-width:540px;margin:0 auto 32px;line-height:1.7}
@@ -165,15 +165,15 @@ h1,h2,h3,h4{line-height:1.2}
 .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
 .grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
 .section{padding:72px 0}
-.section-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(90,184,0,.1);color:var(--green);border:1px solid rgba(90,184,0,.25);padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:.5px;margin-bottom:14px}
+.section-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(0, 84, 166,.1);color:var(--green);border:1px solid rgba(0, 84, 166,.25);padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:.5px;margin-bottom:14px}
 .section-title{font-size:clamp(22px,3.5vw,34px);font-weight:800;color:#fff;margin-bottom:12px}
 .section-sub{font-size:15px;color:var(--text-2);line-height:1.7}
 .tc{text-align:center}
 
 /* ============ WARRANTY CARD (Digital) ============ */
-.wcard{background:linear-gradient(135deg,#0d1f0d 0%,#0d1a2e 50%,#1a0d2e 100%);border:1px solid rgba(90,184,0,.4);border-radius:20px;padding:28px;position:relative;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.07)}
-.wcard::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(90,184,0,.07) 0%,transparent 70%);pointer-events:none}
-.wcard-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid rgba(90,184,0,.18)}
+.wcard{background:linear-gradient(135deg,#0d1f0d 0%,#0d1a2e 50%,#1a0d2e 100%);border:1px solid rgba(0, 84, 166,.4);border-radius:20px;padding:28px;position:relative;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.07)}
+.wcard::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(0, 84, 166,.07) 0%,transparent 70%);pointer-events:none}
+.wcard-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid rgba(0, 84, 166,.18)}
 .wcard-brand{display:flex;align-items:center;gap:10px}
 .wcard-logo{width:40px;height:40px;background:linear-gradient(135deg,var(--green),var(--green-dark));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px}
 .wcard-brand-name{font-size:20px;font-weight:900;color:#fff}
@@ -185,13 +185,13 @@ h1,h2,h3,h4{line-height:1.2}
 .wci label{font-size:10px;color:var(--text-3);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:3px}
 .wci span{font-size:14px;font-weight:700;color:var(--text)}
 .wcard-expiry{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:12px;margin-top:4px}
-.wcard-expiry.ok{background:rgba(90,184,0,.1);border:1px solid rgba(90,184,0,.3)}
+.wcard-expiry.ok{background:rgba(0, 84, 166,.1);border:1px solid rgba(0, 84, 166,.3)}
 .wcard-expiry.ex{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3)}
 .wcard-expiry-date{font-size:18px;font-weight:800}
 .wcard-expiry.ok .wcard-expiry-date{color:var(--green-light)}
 .wcard-expiry.ex .wcard-expiry-date{color:#fca5a5}
 .wcard-expiry-cd{font-size:12px;color:var(--text-2);margin-top:2px}
-.wcard-footer{margin-top:18px;padding-top:14px;border-top:1px solid rgba(90,184,0,.12);display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,.25)}
+.wcard-footer{margin-top:18px;padding-top:14px;border-top:1px solid rgba(0, 84, 166,.12);display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,.25)}
 
 /* ============ TIMELINE ============ */
 .timeline{position:relative;padding-left:24px}
@@ -223,9 +223,9 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
 .sidebar-section{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--text-3);padding:8px 8px 4px;margin-top:8px}
 .sl{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:9px;color:var(--text-2);font-size:13px;font-weight:600;cursor:pointer;transition:var(--tr);margin-bottom:2px;border:1px solid transparent}
 .sl:hover{background:rgba(255,255,255,.05);color:var(--text)}
-.sl.on{background:rgba(90,184,0,.12);color:var(--green-light);border-color:rgba(90,184,0,.2)}
+.sl.on{background:rgba(0, 84, 166,.12);color:var(--green-light);border-color:rgba(0, 84, 166,.2)}
 .sl-icon{font-size:15px;flex-shrink:0}
-.sl-badge{margin-left:auto;background:rgba(90,184,0,.2);color:var(--green);font-size:10px;font-weight:800;padding:2px 7px;border-radius:10px}
+.sl-badge{margin-left:auto;background:rgba(0, 84, 166,.2);color:var(--green);font-size:10px;font-weight:800;padding:2px 7px;border-radius:10px}
 .admin-main{flex:1;margin-left:248px;padding:24px;background:var(--bg);min-height:100vh}
 .admin-topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
 .page-title{font-size:22px;font-weight:900;color:#fff}
@@ -234,9 +234,9 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
 /* ============ STAT CARDS ============ */
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-bottom:24px}
 .stat-card{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:14px;padding:18px;display:flex;align-items:center;gap:14px;transition:var(--tr)}
-.stat-card:hover{border-color:var(--border);box-shadow:0 0 30px rgba(90,184,0,.1)}
+.stat-card:hover{border-color:var(--border);box-shadow:0 0 30px rgba(0, 84, 166,.1)}
 .stat-icon{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
-.si-g{background:rgba(90,184,0,.12)}
+.si-g{background:rgba(0, 84, 166,.12)}
 .si-y{background:rgba(251,191,36,.12)}
 .si-r{background:rgba(239,68,68,.12)}
 .si-b{background:rgba(59,130,246,.12)}
@@ -248,7 +248,7 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
 .search-box{position:relative;flex:1;min-width:220px}
 .search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-3);font-size:15px;pointer-events:none}
 .search-inp{width:100%;padding:10px 14px 10px 38px;background:rgba(255,255,255,.04);border:1.5px solid var(--border-soft);border-radius:10px;color:var(--text);font-family:var(--font);font-size:14px;outline:none;transition:var(--tr)}
-.search-inp:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(90,184,0,.1)}
+.search-inp:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(0, 84, 166,.1)}
 
 /* ============ EMPTY STATE ============ */
 .empty{text-align:center;padding:56px 20px}
@@ -268,14 +268,14 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
 
 /* ============ TOAST ============ */
 .toast-wrap{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:9999;display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none}
-.toast{background:#1a1a2e;color:#fff;border:1px solid rgba(90,184,0,.3);border-radius:12px;padding:12px 20px;font-size:14px;font-weight:600;box-shadow:0 8px 32px rgba(0,0,0,.5);animation:toastIn .3s ease;pointer-events:auto;white-space:nowrap}
+.toast{background:#1a1a2e;color:#fff;border:1px solid rgba(0, 84, 166,.3);border-radius:12px;padding:12px 20px;font-size:14px;font-weight:600;box-shadow:0 8px 32px rgba(0,0,0,.5);animation:toastIn .3s ease;pointer-events:auto;white-space:nowrap}
 .toast.err{border-color:rgba(239,68,68,.4);background:#1f1015}
 @keyframes toastIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
 @keyframes toastOut{from{opacity:1}to{opacity:0;transform:translateY(-10px)}}
 
 /* ============ UPLOAD ZONE ============ */
 .upload-zone{border:2px dashed var(--border-soft);border-radius:12px;padding:28px;text-align:center;cursor:pointer;transition:var(--tr);background:rgba(255,255,255,.02)}
-.upload-zone:hover,.upload-zone.drag{border-color:var(--green);background:rgba(90,184,0,.04)}
+.upload-zone:hover,.upload-zone.drag{border-color:var(--green);background:rgba(0, 84, 166,.04)}
 .uz-icon{font-size:34px;margin-bottom:8px}
 .uz-text{font-size:14px;color:var(--text-2)}
 .uz-hint{font-size:12px;color:var(--text-3);margin-top:4px}
@@ -298,8 +298,8 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
 .footer-bottom{border-top:1px solid var(--border-soft);padding-top:18px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--text-3)}
 
 /* ============ CTA SECTION ============ */
-.cta-box{background:linear-gradient(135deg,rgba(90,184,0,.12),rgba(90,184,0,.04));border:1px solid rgba(90,184,0,.25);border-radius:24px;padding:48px 40px;text-align:center;position:relative;overflow:hidden}
-.cta-box::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle,rgba(90,184,0,.12) 0%,transparent 70%)}
+.cta-box{background:linear-gradient(135deg,rgba(0, 84, 166,.12),rgba(0, 84, 166,.04));border:1px solid rgba(0, 84, 166,.25);border-radius:24px;padding:48px 40px;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle,rgba(0, 84, 166,.12) 0%,transparent 70%)}
 
 /* ============ POLICY BLOCK ============ */
 .policy-block{border-radius:14px;padding:20px;margin-bottom:18px}
@@ -335,7 +335,7 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
 .issue-tags{display:flex;flex-wrap:wrap;gap:8px}
 .issue-tag{padding:7px 14px;border-radius:8px;border:1px solid var(--border-soft);background:rgba(255,255,255,.03);color:var(--text-2);font-size:13px;cursor:pointer;font-family:var(--font);transition:var(--tr)}
 .issue-tag:hover{border-color:var(--border);color:var(--text)}
-.issue-tag.on{border-color:var(--green);background:rgba(90,184,0,.1);color:var(--green-light)}
+.issue-tag.on{border-color:var(--green);background:rgba(0, 84, 166,.1);color:var(--green-light)}
 
 /* Image grid */
 .img-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
@@ -414,26 +414,26 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
       </div>
       <div class="grid-4">
         <div class="card" style="position:relative;overflow:hidden" id="step-card-1">
-          <div style="position:absolute;top:14px;right:14px;font-size:46px;font-weight:900;color:rgba(90,184,0,.07)">01</div>
-          <div style="width:34px;height:34px;background:rgba(90,184,0,.12);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--green);margin-bottom:12px">01</div>
+          <div style="position:absolute;top:14px;right:14px;font-size:46px;font-weight:900;color:rgba(0, 84, 166,.07)">01</div>
+          <div style="width:34px;height:34px;background:rgba(0, 84, 166,.12);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--green);margin-bottom:12px">01</div>
           <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:6px">Chọn sản phẩm</h3>
           <p style="font-size:13px;color:var(--text-2);line-height:1.6">Chọn dòng vali Hùng Phát của bạn và nhập thông tin sản phẩm</p>
         </div>
         <div class="card" style="position:relative;overflow:hidden">
-          <div style="position:absolute;top:14px;right:14px;font-size:46px;font-weight:900;color:rgba(90,184,0,.07)">02</div>
-          <div style="width:34px;height:34px;background:rgba(90,184,0,.12);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--green);margin-bottom:12px">02</div>
+          <div style="position:absolute;top:14px;right:14px;font-size:46px;font-weight:900;color:rgba(0, 84, 166,.07)">02</div>
+          <div style="width:34px;height:34px;background:rgba(0, 84, 166,.12);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--green);margin-bottom:12px">02</div>
           <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:6px">Thông tin khách hàng</h3>
           <p style="font-size:13px;color:var(--text-2);line-height:1.6">Điền họ tên, số điện thoại và địa chỉ để nhận hỗ trợ</p>
         </div>
         <div class="card" style="position:relative;overflow:hidden">
-          <div style="position:absolute;top:14px;right:14px;font-size:46px;font-weight:900;color:rgba(90,184,0,.07)">03</div>
-          <div style="width:34px;height:34px;background:rgba(90,184,0,.12);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--green);margin-bottom:12px">03</div>
+          <div style="position:absolute;top:14px;right:14px;font-size:46px;font-weight:900;color:rgba(0, 84, 166,.07)">03</div>
+          <div style="width:34px;height:34px;background:rgba(0, 84, 166,.12);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--green);margin-bottom:12px">03</div>
           <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:6px">Upload hóa đơn</h3>
           <p style="font-size:13px;color:var(--text-2);line-height:1.6">Chụp ảnh hóa đơn mua hàng để xác thực ngày mua</p>
         </div>
         <div class="card" style="position:relative;overflow:hidden">
-          <div style="position:absolute;top:14px;right:14px;font-size:46px;font-weight:900;color:rgba(90,184,0,.07)">04</div>
-          <div style="width:34px;height:34px;background:rgba(90,184,0,.12);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--green);margin-bottom:12px">04</div>
+          <div style="position:absolute;top:14px;right:14px;font-size:46px;font-weight:900;color:rgba(0, 84, 166,.07)">04</div>
+          <div style="width:34px;height:34px;background:rgba(0, 84, 166,.12);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--green);margin-bottom:12px">04</div>
           <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:6px">Nhận thẻ BHĐT</h3>
           <p style="font-size:13px;color:var(--text-2);line-height:1.6">Nhận thẻ bảo hành điện tử ngay lập tức, không chờ đợi</p>
         </div>
@@ -472,28 +472,28 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
       </div>
       <div class="grid-4">
         <div class="card card-h tc">
-          <div style="width:72px;height:72px;background:linear-gradient(135deg,rgba(90,184,0,.12),rgba(90,184,0,.04));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 14px">🧳</div>
-          <span style="display:inline-block;background:rgba(90,184,0,.12);color:var(--green);font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:8px">Bán chạy</span>
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,rgba(0, 84, 166,.12),rgba(0, 84, 166,.04));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 14px">🧳</div>
+          <span style="display:inline-block;background:rgba(0, 84, 166,.12);color:var(--green);font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:8px">Bán chạy</span>
           <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:3px">Vimove Classic 20"</h3>
           <p style="font-size:12px;color:var(--text-2)">Dòng Classic</p>
           <div style="margin-top:12px;padding-top:10px;border-top:1px solid var(--border-soft);display:flex;justify-content:space-between"><span style="font-size:12px;color:var(--text-3)">Bảo hành</span><span style="font-size:14px;font-weight:800;color:var(--green)">24 tháng</span></div>
         </div>
         <div class="card card-h tc">
-          <div style="width:72px;height:72px;background:linear-gradient(135deg,rgba(90,184,0,.12),rgba(90,184,0,.04));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 14px">🧳</div>
-          <span style="display:inline-block;background:rgba(90,184,0,.12);color:var(--green);font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:8px">Cao cấp</span>
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,rgba(0, 84, 166,.12),rgba(0, 84, 166,.04));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 14px">🧳</div>
+          <span style="display:inline-block;background:rgba(0, 84, 166,.12);color:var(--green);font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:8px">Cao cấp</span>
           <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:3px">Vimove Elite 24"</h3>
           <p style="font-size:12px;color:var(--text-2)">Dòng Elite</p>
           <div style="margin-top:12px;padding-top:10px;border-top:1px solid var(--border-soft);display:flex;justify-content:space-between"><span style="font-size:12px;color:var(--text-3)">Bảo hành</span><span style="font-size:14px;font-weight:800;color:var(--green)">36 tháng</span></div>
         </div>
         <div class="card card-h tc">
-          <div style="width:72px;height:72px;background:linear-gradient(135deg,rgba(90,184,0,.12),rgba(90,184,0,.04));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 14px">🧳</div>
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,rgba(0, 84, 166,.12),rgba(0, 84, 166,.04));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 14px">🧳</div>
           <span style="display:inline-block;background:rgba(59,130,246,.12);color:#93c5fd;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:8px">Mới nhất</span>
           <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:3px">Vimove Pro 28"</h3>
           <p style="font-size:12px;color:var(--text-2)">Dòng Pro</p>
           <div style="margin-top:12px;padding-top:10px;border-top:1px solid var(--border-soft);display:flex;justify-content:space-between"><span style="font-size:12px;color:var(--text-3)">Bảo hành</span><span style="font-size:14px;font-weight:800;color:var(--green)">36 tháng</span></div>
         </div>
         <div class="card card-h tc">
-          <div style="width:72px;height:72px;background:linear-gradient(135deg,rgba(90,184,0,.12),rgba(90,184,0,.04));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 14px">🧳</div>
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,rgba(0, 84, 166,.12),rgba(0, 84, 166,.04));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 14px">🧳</div>
           <span style="display:inline-block;background:rgba(251,191,36,.1);color:#fbbf24;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:8px">Cho trẻ em</span>
           <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:3px">Vimove Kids 18"</h3>
           <p style="font-size:12px;color:var(--text-2)">Dòng Kids</p>
@@ -594,7 +594,7 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
           <option value="VM-KD-18|Vimove Kids 18&quot;|Kids|18">Vimove Kids 18" (BH 18 tháng)</option>
         </select>
       </div>
-      <div id="act-product-info" style="display:none;background:rgba(90,184,0,.08);border:1px solid rgba(90,184,0,.2);border-radius:10px;padding:12px 16px;margin-bottom:18px;">
+      <div id="act-product-info" style="display:none;background:rgba(0, 84, 166,.08);border:1px solid rgba(0, 84, 166,.2);border-radius:10px;padding:12px 16px;margin-bottom:18px;">
         <div style="display:flex;align-items:center;gap:10px">
           <span style="font-size:22px">🧳</span>
           <div><div id="act-product-name" style="font-size:14px;font-weight:700;color:#fff"></div><div style="font-size:12px;color:var(--green);margin-top:2px" id="act-product-bh"></div></div>
@@ -683,10 +683,10 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
 
     <!-- Step 4: Success -->
     <div class="card" id="act-step4" style="display:none;text-align:center">
-      <div style="width:80px;height:80px;background:rgba(90,184,0,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 18px;border:2px solid rgba(90,184,0,.4);box-shadow:0 0 30px rgba(90,184,0,.2)">🎉</div>
+      <div style="width:80px;height:80px;background:rgba(0, 84, 166,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;margin:0 auto 18px;border:2px solid rgba(0, 84, 166,.4);box-shadow:0 0 30px rgba(0, 84, 166,.2)">🎉</div>
       <h2 style="font-size:24px;font-weight:900;color:#fff;margin-bottom:8px">Kích hoạt thành công!</h2>
       <p style="font-size:14px;color:var(--text-2);margin-bottom:22px">Bảo hành điện tử đã được đăng ký thành công</p>
-      <div style="background:rgba(90,184,0,.08);border:1px solid rgba(90,184,0,.25);border-radius:12px;padding:16px 20px;margin-bottom:22px;display:inline-block">
+      <div style="background:rgba(0, 84, 166,.08);border:1px solid rgba(0, 84, 166,.25);border-radius:12px;padding:16px 20px;margin-bottom:22px;display:inline-block">
         <div style="font-size:12px;color:var(--text-2);margin-bottom:4px">Mã bảo hành của bạn</div>
         <div id="act-result-code" style="font-size:24px;font-weight:900;color:var(--green);font-family:monospace"></div>
       </div>
@@ -771,7 +771,7 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
       <p style="font-size:14px;color:var(--text-2);margin-top:8px">Đội kỹ thuật sẽ liên hệ bạn trong vòng 24 giờ</p>
     </div>
     <div id="reqDone" style="display:none" class="card tc">
-      <div style="width:72px;height:72px;background:rgba(90,184,0,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 18px;border:2px solid rgba(90,184,0,.4)">📋</div>
+      <div style="width:72px;height:72px;background:rgba(0, 84, 166,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 18px;border:2px solid rgba(0, 84, 166,.4)">📋</div>
       <h2 style="font-size:22px;font-weight:900;color:#fff;margin-bottom:8px">Đã gửi yêu cầu!</h2>
       <p id="reqDoneMsg" style="font-size:14px;color:var(--text-2);margin-bottom:22px"></p>
       <button class="btn btn-p btn-full" onclick="goto('home')">← Về trang chủ</button>
@@ -791,7 +791,7 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
       </div>
       <div class="card">
         <div style="display:flex;gap:10px;margin-bottom:18px" id="reqTypeWrap">
-          <button class="btn" style="flex:1;border:1.5px solid var(--green);background:rgba(90,184,0,.1);color:var(--green);text-align:left;padding:12px 14px;height:auto;flex-direction:column;align-items:flex-start;gap:3px" id="reqType-warranty" onclick="selectReqType('warranty')">
+          <button class="btn" style="flex:1;border:1.5px solid var(--green);background:rgba(0, 84, 166,.1);color:var(--green);text-align:left;padding:12px 14px;height:auto;flex-direction:column;align-items:flex-start;gap:3px" id="reqType-warranty" onclick="selectReqType('warranty')">
             <span style="font-size:14px;font-weight:700">🛡️ Bảo hành</span>
             <span style="font-size:11px;opacity:.7;white-space:normal">Sửa miễn phí trong hạn BH</span>
           </button>
@@ -857,7 +857,7 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
       </div>
       <p style="font-size:12px;color:var(--text-3);margin-top:10px">* Thời hạn tính từ ngày mua có hóa đơn và đã kích hoạt bảo hành điện tử.</p>
     </div>
-    <div class="policy-block" style="background:rgba(90,184,0,.06);border:1px solid rgba(90,184,0,.2)">
+    <div class="policy-block" style="background:rgba(0, 84, 166,.06);border:1px solid rgba(0, 84, 166,.2)">
       <h2 style="font-size:15px;font-weight:800;color:#fff">✅ Các trường hợp được bảo hành miễn phí</h2>
       <ul>
         <li><span style="color:var(--green)">•</span> Lỗi khóa kéo bị hỏng, kẹt do lỗi sản xuất (không do va đập mạnh)</li>
@@ -910,7 +910,7 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
   <div style="width:100%;max-width:400px;padding:28px 20px">
     <div style="text-align:center;margin-bottom:28px">
       <div style="width:60px;height:60px;background:linear-gradient(135deg,var(--green),var(--green-dark));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 14px;box-shadow:0 8px 24px var(--green-glow)">🧳</div>
-      <div style="font-size:20px;font-weight:900;color:#fff">Vimove Admin</div>
+      <div style="font-size:20px;font-weight:900;color:#fff">Hùng Phát - Admin Dashboard</div>
       <div style="font-size:13px;color:var(--text-2);margin-top:4px">Đăng nhập để quản lý hệ thống bảo hành</div>
     </div>
     <div class="card">
@@ -931,9 +931,9 @@ tbody tr:hover{background:rgba(255,255,255,.02)}
         <button onclick="goto('home')" style="font-size:13px;color:var(--text-3);background:none;border:none;cursor:pointer;font-family:var(--font)">← Về trang chủ</button>
       </div>
     </div>
-    <div style="margin-top:16px;background:rgba(90,184,0,.06);border:1px solid rgba(90,184,0,.15);border-radius:12px;padding:14px 16px">
+    <div style="margin-top:16px;background:rgba(0, 84, 166,.06);border:1px solid rgba(0, 84, 166,.15);border-radius:12px;padding:14px 16px">
       <div style="font-size:11px;color:var(--text-3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Tài khoản mặc định</div>
-      <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px"><span style="color:var(--text-2)">TK Admin:</span><span style="font-family:monospace;color:var(--green)">admin / Vimove@2024</span></div>
+      <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px"><span style="color:var(--text-2)">TK Admin:</span><span style="font-family:monospace;color:var(--green)">admin / HP-Admin@2024</span></div>
       <div style="display:flex;justify-content:space-between;font-size:13px"><span style="color:var(--text-2)">TK Quản lý:</span><span style="font-family:monospace;color:var(--green)">manager / Vimove@123</span></div>
     </div>
   </div>
@@ -1641,7 +1641,7 @@ function renderSearchResults(results) {
   el.innerHTML = results.map(w => {
     const days = daysLeft(w.warrantyExpiry);
     const isActive = w.status === 'active';
-    return `<div class="card" style="margin-bottom:12px;cursor:pointer;border-color:${isActive?'rgba(90,184,0,.3)':'rgba(255,255,255,.07)'}" onclick="viewWarranty('${w.id}')">
+    return `<div class="card" style="margin-bottom:12px;cursor:pointer;border-color:${isActive?'rgba(0, 84, 166,.3)':'rgba(255,255,255,.07)'}" onclick="viewWarranty('${w.id}')">
       <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
         <div><div style="font-size:16px;font-weight:700;color:#fff">${w.productName}</div><div style="font-size:12px;color:var(--text-2);margin-top:2px">${w.customer.name} · ${w.customer.phone}</div></div>
         ${statusBadge(w.status)}
@@ -1651,7 +1651,7 @@ function renderSearchResults(results) {
         <div><div style="font-size:11px;color:var(--text-3)">Kích hoạt</div><div style="font-size:13px;font-weight:600;color:#fff">${fmtDate(w.activationDate)}</div></div>
         <div><div style="font-size:11px;color:var(--text-3)">Hết hạn</div><div style="font-size:13px;font-weight:600;color:${w.status==='expired'?'#fca5a5':'var(--green)'}">${fmtDate(w.warrantyExpiry)}</div></div>
       </div>
-      ${isActive ? `<div style="background:rgba(90,184,0,.08);border-radius:8px;padding:8px 12px;font-size:13px;color:#7dd300">⏳ Còn <strong>${days} ngày</strong> bảo hành</div>` : ''}
+      ${isActive ? `<div style="background:rgba(0, 84, 166,.08);border-radius:8px;padding:8px 12px;font-size:13px;color:#7dd300">⏳ Còn <strong>${days} ngày</strong> bảo hành</div>` : ''}
       <div style="margin-top:12px;font-size:12px;color:var(--green);text-align:right">Xem chi tiết →</div>
     </div>`;
   }).join('');
@@ -1763,10 +1763,10 @@ function selectReqType(type) {
   const wBtn = document.getElementById('reqType-warranty');
   const rBtn = document.getElementById('reqType-repair');
   if (type === 'warranty') {
-    wBtn.style.border = '1.5px solid var(--green)'; wBtn.style.background = 'rgba(90,184,0,.1)'; wBtn.style.color = 'var(--green)';
+    wBtn.style.border = '1.5px solid var(--green)'; wBtn.style.background = 'rgba(0, 84, 166,.1)'; wBtn.style.color = 'var(--green)';
     rBtn.style.border = '1px solid var(--border-soft)'; rBtn.style.background = 'rgba(255,255,255,.06)'; rBtn.style.color = 'var(--text)';
   } else {
-    rBtn.style.border = '1.5px solid var(--green)'; rBtn.style.background = 'rgba(90,184,0,.1)'; rBtn.style.color = 'var(--green)';
+    rBtn.style.border = '1.5px solid var(--green)'; rBtn.style.background = 'rgba(0, 84, 166,.1)'; rBtn.style.color = 'var(--green)';
     wBtn.style.border = '1px solid var(--border-soft)'; wBtn.style.background = 'rgba(255,255,255,.06)'; wBtn.style.color = 'var(--text)';
   }
 }
@@ -1786,7 +1786,7 @@ async function reqFindWarranty() {
   const isActive = w.status === 'active';
   document.getElementById('req-warranty-found').style.display = 'block';
   document.getElementById('req-warranty-found').innerHTML = `
-    <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(90,184,0,.06);border:1px solid rgba(90,184,0,.2);border-radius:10px;margin-top:8px">
+    <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(0, 84, 166,.06);border:1px solid rgba(0, 84, 166,.2);border-radius:10px;margin-top:8px">
       <span style="font-size:24px">🧳</span>
       <div style="flex:1"><div style="font-size:14px;font-weight:700;color:#fff">${w.productName}</div><div style="font-size:12px;color:var(--text-2);margin-top:1px">${w.customer.name} · Mã: <span style="color:var(--green);font-family:monospace">${w.warrantyCode}</span></div></div>
       ${statusBadge(w.status)}
@@ -1968,7 +1968,7 @@ function renderRequestsList() {
   if (!el) return;
   el.innerHTML = filtered.length === 0
     ? `<div class="empty"><div class="empty-icon">📋</div><div class="empty-title">Không có yêu cầu</div></div>`
-    : filtered.map(r => `<div class="card card-sm" style="cursor:pointer;border-color:${STATE.selectedReqId===r.id?'rgba(90,184,0,.4)':'var(--border-soft)'}" onclick="selectReq('${r.id}')">
+    : filtered.map(r => `<div class="card card-sm" style="cursor:pointer;border-color:${STATE.selectedReqId===r.id?'rgba(0, 84, 166,.4)':'var(--border-soft)'}" onclick="selectReq('${r.id}')">
         <div style="display:flex;justify-content:space-between;align-items:flex-start">
           <div style="flex:1"><div style="display:flex;gap:8px;align-items:center;margin-bottom:3px">
             <span style="font-size:14px;font-weight:700;color:#fff">${r.productName}</span>${statusBadge(r.status)}
@@ -2150,7 +2150,7 @@ function renderProductsTable() {
     : filtered.map(p => `<tr>
         <td><span style="font-family:monospace;color:var(--green);font-size:13px">${p.code}</span></td>
         <td><div style="font-weight:700;color:#fff;font-size:14px">${p.name}</div>${p.desc?`<div style="font-size:11px;color:var(--text-3);margin-top:1px">${p.desc}</div>`:''}</td>
-        <td><span style="background:rgba(90,184,0,.1);color:var(--green);padding:2px 8px;border-radius:6px;font-size:12px;font-weight:700">${p.series}</span></td>
+        <td><span style="background:rgba(0, 84, 166,.1);color:var(--green);padding:2px 8px;border-radius:6px;font-size:12px;font-weight:700">${p.series}</span></td>
         <td style="font-size:13px;color:var(--text-2)">${p.size||'—'}</td>
         <td style="font-size:14px;font-weight:700;color:var(--green)">${p.warrantyMonths} tháng</td>
         <td>${p.active ? '<span style="color:var(--green);font-size:12px">● Đang KD</span>' : '<span style="color:var(--text-3);font-size:12px">○ Ngừng</span>'}</td>
@@ -2254,12 +2254,12 @@ function setSelectVal(id, val) {
 
 // ========== ADMIN AUTH ==========
 const ADMIN_USERS = [
-  { user: 'admin', pass: 'Vimove@2024', name: 'Admin Vimove' },
+  { user: 'admin', pass: 'HP-Admin@2024', name: 'Admin Vimove' },
   { user: 'manager', pass: 'Vimove@123', name: 'Quản lý' },
 ];
 
 function goAdmin() {
-  const logged = sessionStorage.getItem('vimove_admin');
+  const logged = sessionStorage.getItem('hp_admin');
   if (logged) { goto('admin'); return; }
   goto('admin-login');
 }
@@ -2275,13 +2275,13 @@ function doAdminLogin() {
     document.getElementById('login-pass').value = '';
     return;
   }
-  sessionStorage.setItem('vimove_admin', JSON.stringify({ user: found.user, name: found.name }));
+  sessionStorage.setItem('hp_admin', JSON.stringify({ user: found.user, name: found.name }));
   toast(`✅ Chào mừng, ${found.name}!`);
   goto('admin');
 }
 
 function adminLogout() {
-  sessionStorage.removeItem('vimove_admin');
+  sessionStorage.removeItem('hp_admin');
   goto('home');
   toast('Đã đăng xuất');
 }
